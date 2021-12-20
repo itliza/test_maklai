@@ -4,17 +4,20 @@
         <title>Homework</title>
         <meta charset = "utf-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
         <form class="form" id="testForm">
             <label>
-                Please, enter first number: <input type="text" name="" data-name="firstInput">
+                First number <input class="input-style" type="text" name="" placeholder="Введите любое число" data-name="firstInput">
             </label>
             <label>
-                Please, enter second number: <input type="text" name="" data-name="secondInput">
+                Second number <input class="input-style" type="text" name="" placeholder="Введите любое число" data-name="secondInput">
             </label>
-            <label>
-                Choose operation: <select data-name="operator">
+            <label class="select">
+                Choose operation <select class="option" data-name="operator">
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">*</option>

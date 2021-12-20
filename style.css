@@ -1,6 +1,7 @@
 body {
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
+	color: #62ACF6;
 }
 .form {
 	display: inline-flex;
@@ -11,7 +12,6 @@ body {
 label {
 	display: flex;
 	flex-direction: column;
-	color: #62ACF6;
 	font-size: 16px;
 }
 .select {
@@ -21,13 +21,18 @@ label {
 	align-items: center;
 
 }
+select.option {
+	-webkit-appearance: none;
+}
 .option {
 	background: #F2F2F2;
 	border-radius: 20px;
 	width: 120px;
 	padding: 10px;
+	text-align: center;
 	border: none;
-
+	box-shadow: 0px -6px 10px #FFFFFF, 0px 4px 15px rgba(31, 56, 101, 0.15);
+	color: #999999;
 }
 .input-style {
 	background: #F2F2F2;
@@ -41,7 +46,6 @@ label {
 ::placeholder {
 	color: #999999;
 	font-size: 16px;
-	/*padding-left: 30px;*/
 	font-family: 'Montserrat', sans-serif;
 }
 input[type="text" i] {
@@ -58,11 +62,8 @@ button {
 	font-size: 16px;
 	margin: 30px 0 60px 0;
 	width: 315px;
+	box-shadow: 0px -6px 10px #FFFFFF, 0px 4px 15px rgba(31, 56, 101, 0.15);
 } 
 .result {
-	margin: 10px 0;
-	padding: 10px;
-	color: #62ACF6;
 	text-align: center;
-
 }

@@ -16,14 +16,16 @@
             <label>
                 Second number <input class="input-style" type="text" name="" placeholder="Please enter any number" data-name="secondInput">
             </label>
-            <label class="select">
-                Choose operation <select class="option" data-name="operator">
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <option value="*">*</option>
-                    <option value="/">/</option>
-                </select>
-            </label>
+            <div class="select-wrapper">
+                <label class="select">
+                        Choose operation <select class="option" data-name="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </label>
+            </div>
             <button>Get result</button>
             <div class="result" id="checkResult">Input numbers and press button</div>
         </form> 

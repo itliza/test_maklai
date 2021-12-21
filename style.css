@@ -4,7 +4,7 @@ body {
 	color: #62ACF6;
 }
 .form {
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
 	background: #E5E5E5;
 	padding: 60px 30px;
@@ -19,7 +19,6 @@ label {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-
 }
 select.option {
 	-webkit-appearance: none;
@@ -28,11 +27,24 @@ select.option {
 	background: #F2F2F2;
 	border-radius: 20px;
 	width: 120px;
-	padding: 10px;
-	text-align: center;
+	padding: 10px 30px;
 	border: none;
 	box-shadow: 0px -6px 10px #FFFFFF, 0px 4px 15px rgba(31, 56, 101, 0.15);
 	color: #999999;
+}
+.select-wrapper{
+	position: relative;
+}
+.select-wrapper:after{
+	content: '';
+	position: absolute;
+	top: 14px;
+	right: 30px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7px 5px 0 5px;
+	border-color: #62ACF6 transparent transparent transparent;
 }
 .input-style {
 	background: #F2F2F2;

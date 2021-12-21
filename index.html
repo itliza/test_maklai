@@ -5,7 +5,6 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -13,12 +12,12 @@
     <body>
         <form class="form" id="testForm">
             <legend class="legend">Input numbers, choose operation and press button</legend>
-            <label>First number</label>
-            <div class="field"><input type="text" class="field-input" placeholder="Please enter any number" data-name="firstInput"></div>
-            <label>Second number</label>
-            <div class="field"><input type="text" class="field-input" placeholder="Please enter any number" data-name="secondInput"></div>
+            <label class="label" for="first">First number</label>
+            <div class="field"><input id="first" type="text" class="field-input" placeholder="Please enter any number" data-name="firstInput"></div>
+            <label class="label" for="second">Second number</label>
+            <div class="field"><input id="second" type="text" class="field-input" placeholder="Please enter any number" data-name="secondInput"></div>
             <div class="row">
-                <label>Choose operation</label> 
+                <label class="label">Choose operation</label> 
                 <div class="select-wrapper">
                     <select class="option" data-name="operator">
                             <option value="+">+</option>
@@ -28,9 +27,9 @@
                     </select>
                 </div>
             </div>
-            <button>Get result</button>
+            <button class="submit">Get result</button>
             <div class="row">
-                <label>Result<sub>*</sub></label>
+                <label class="label">Result<sub>*</sub></label>
                 <span class="result" id="checkResult"></span>
             </div>
             <p class="note"><sub>*</sub>please note, that result of operation is rounded</p>

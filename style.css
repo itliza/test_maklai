@@ -136,7 +136,7 @@ label {
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 }
-button {
+.submit {
 	background: #62ACF6;
 	color: #fff;
 	padding: 10px;
@@ -148,10 +148,10 @@ button {
 	width: 100%;
 	box-shadow: 0px -6px 10px #FFFFFF, 0px 4px 15px rgba(31, 56, 101, 0.15);
 } 
-button:hover{
+.submit:hover{
 	box-shadow: inset 0px -6px 10px #62acf6, inset 0px 4px 15px rgb(31 56 101 / 0.15);
 }
-button:focus {
+.submit:focus {
 	box-shadow: 0px -6px 10px #ffffff, 0px 4px 15px rgb(31 56 101 / 15%);
 	background: #F2F2F2;
 	color: #62ACF6;

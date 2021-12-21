@@ -12,6 +12,7 @@
     </head>
     <body>
         <form class="form" id="testForm">
+            <legend class="legend">Input numbers, choose operation and press button</legend>
             <label>First number</label>
             <div class="field"><input type="text" class="field-input" placeholder="Please enter any number" data-name="firstInput"></div>
             <label>Second number</label>
@@ -28,7 +29,11 @@
                 </div>
             </div>
             <button>Get result</button>
-            <div class="result" id="checkResult">Input numbers and press button</div>
+            <div class="row">
+                <label>Result<sub>*</sub></label>
+                <span class="result" id="checkResult"></span>
+            </div>
+            <p class="note"><sub>*</sub>please note, that result of operation is rounded</p>
         </form> 
         <script src="script.js"></script>
     </body>

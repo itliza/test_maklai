@@ -64,17 +64,16 @@ body {
 	margin: 0 auto;
 }
 label {
-	display: flex;
-	flex-direction: column;
 	font-size: 16px;
 }
-.select {
-	display: flex;
-	flex-direction: row;
+.select-wrapper {
+	display: inline-flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	margin: 0 0 0 20px;
 }
-select.option {
+.select-wrapper .option {
 	-webkit-appearance: none;
 }
 .option {
@@ -87,13 +86,17 @@ select.option {
 	color: #999999;
 	outline: none;
 }
-.select-wrapper{
-	position: relative;
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
 .select-wrapper:after{
 	content: '';
 	position: absolute;
-	top: 15px;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 30px;
 	width: 0;
 	height: 0;

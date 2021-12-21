@@ -5,7 +5,6 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reset.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,15 +16,16 @@
             <div class="field"><input type="text" class="field-input" placeholder="Please enter any number" data-name="firstInput"></div>
             <label>Second number</label>
             <div class="field"><input type="text" class="field-input" placeholder="Please enter any number" data-name="secondInput"></div>
-            <div class="select-wrapper">
-                <label class="select">
-                        Choose operation <select class="option" data-name="operator">
-                        <option value="+">+</option>
-                        <option value="-">-</option>
-                        <option value="*">*</option>
-                        <option value="/">/</option>
+            <div class="row">
+                <label>Choose operation</label> 
+                <div class="select-wrapper">
+                    <select class="option" data-name="operator">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
                     </select>
-                </label>
+                </div>
             </div>
             <button>Get result</button>
             <div class="result" id="checkResult">Input numbers and press button</div>
